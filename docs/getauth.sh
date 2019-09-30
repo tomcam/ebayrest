@@ -22,7 +22,7 @@
 #   PRODUCTION_CLIENT_SECRET="<YOUR EBAY CREDENTIALS>"
 #
 # 2. Set permissions so the file can be run.
-# $ chmod +x apptoken.sh
+# $ chmod +x getauth.sh
 #
 # 3. Then just run at the shell
 #
