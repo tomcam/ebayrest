@@ -8,16 +8,14 @@ func envSet(debug bool) bool {
 		"PRODUCTION_CLIENT_SECRET",
 		"SANDBOX_CLIENT_ID",
 		"SANDBOX_CLIENT_SECRET"}
-  allset := true
+	allset := true
 	for _, envar := range vars {
 		if os.Getenv(envar) == "" {
 			if debug {
-        fmt.Fprintf(os.Stderr, "Missing environment variable %v\n", envar)
-      }
-      allset = false
+				fmt.Fprintf(os.Stderr, "Missing environment variable %v\n", envar)
+			}
+			allset = false
 		}
 	}
 	return allset
 }
-
-
