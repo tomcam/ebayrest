@@ -4,18 +4,20 @@
 // Pass true to debug to write names
 // of missing vars to stderr
 func envSet(debug bool) bool {
-	vars := []string{"PRODUCTION_CLIENT_ID",
-		"PRODUCTION_CLIENT_SECRET",
-		"SANDBOX_CLIENT_ID",
-		"SANDBOX_CLIENT_SECRET"}
-	allset := true
-	for _, envar := range vars {
-		if os.Getenv(envar) == "" {
-			if debug {
-				fmt.Fprintf(os.Stderr, "Missing environment variable %v\n", envar)
-			}
-			allset = false
-		}
-	}
-	return allset
+  vars := []string{"PRODUCTION_CLIENT_ID",
+    "PRODUCTION_CLIENT_SECRET",
+    "PRODUCTION_REDIRECT_URL",
+    "SANDBOX_CLIENT_ID",
+    "SANDBOX_CLIENT_SECRET",
+    "SANDBOX_REDIRECT_URL"}
+  allset := true
+  for _, envar := range vars {
+    if os.Getenv(envar) == "" {
+      if debug {
+        fmt.Fprintf(os.Stderr, "Missing environment variable %v\n", envar)
+      }
+      allset = false
+    }
+  }
+  return allset
 }
