@@ -1,5 +1,7 @@
 # eBay RESTful API notes
 
+[apptoken.go](apptoken.go) shows how to get an application access token
+
 ## Client credentials grant request (aka authorization code)
 
 [envset.go](envset.go) returns true if eBay secret environment variables have been set.
