@@ -1,6 +1,7 @@
 # eBay RESTful API notes
 
-[apptoken.go](apptoken.go) shows how to get an application access token
+[apptoken.go](apptoken.go) shows how to get an application access token. Pretty sure it's the same in theory as getauth.sh
+so I need to rename one of these and clean up the docs.
 
 ## Client credentials grant request (aka authorization code)
 
